@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>my first blog</title>
+    <url>/2021/10/19/my-first-blog/</url>
+    <content><![CDATA[<h1 id="你好啊，猫鱼"><a href="#你好啊，猫鱼" class="headerlink" title="你好啊，猫鱼"></a>你好啊，猫鱼</h1><p>你花了将近3天时间完成了hexo博客的创建和远端部署<br>完成了博客的更新和修改以及Markdown的使用<br>快乐的心情难以言表<br>以及<br>陌生人，Stranger，希望你好好生活，hope you a wonderful life.</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
     <title>Meow meow meow</title>
     <url>/2021/10/20/Meow-meow-meow/</url>
     <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
@@ -23,13 +30,6 @@
       </tags>
   </entry>
   <entry>
-    <title>my first blog</title>
-    <url>/2021/10/19/my-first-blog/</url>
-    <content><![CDATA[<h1 id="你好啊，猫鱼"><a href="#你好啊，猫鱼" class="headerlink" title="你好啊，猫鱼"></a>你好啊，猫鱼</h1><p>你花了将近3天时间完成了hexo博客的创建和远端部署<br>完成了博客的更新和修改以及Markdown的使用<br>快乐的心情难以言表<br>以及<br>陌生人，Stranger，希望你好好生活，hope you a wonderful life.</p>
-<hr>
-]]></content>
-  </entry>
-  <entry>
     <title>java_overview</title>
     <url>/2021/10/23/java-overview/</url>
     <content><![CDATA[<h1 id="1-Java-overview"><a href="#1-Java-overview" class="headerlink" title="1.Java overview"></a>1.Java overview</h1><h2 id="简单说两句"><a href="#简单说两句" class="headerlink" title="简单说两句"></a>简单说两句</h2><p>从这篇博客起我开始从头学习Java，目前选了几本基本经典读物，试试生硬的啃啃吧，第一本，也就是此时此地选的是《Java核心技术》，该书分为两卷，大致浏览了下，比较新而且没有超纲，就当认真复习一下。以前学了个啥都过一段时间就忘，现在有了博客，以后笔记会不定时更新，坚持下去。该动了！！！</p>
@@ -45,7 +45,7 @@
 <li>未经授权读写文件<br>后来嘛，也就那样（不是我的意思，是Core java作者的意思，哈哈）<h3 id="体系结构中立性"><a href="#体系结构中立性" class="headerlink" title="体系结构中立性"></a>体系结构中立性</h3>Emm，JVM也是一个大坑。编译器生成一个体系结构中立的目标文件格式，这些编译后的代码可以在许多处理器上运行，我是不是可以理解为，体系结构中立性为可移植性立下了基础？<h3 id="可移植性"><a href="#可移植性" class="headerlink" title="可移植性"></a>可移植性</h3>不用操心底层操作系统如何运作，做到程序可移植且不受编译器开发商的约束（大概吧<h3 id="解释型"><a href="#解释型" class="headerlink" title="解释型"></a>解释型</h3>Java解释器可以在任何移植了解释器的机器上直接执行Java字节码，jshell（新奇，我JDK1.8没见过这个东西）<h3 id="高性能"><a href="#高性能" class="headerlink" title="高性能"></a>高性能</h3>不怎么明白为什么高性能，我对Java的理解是不怎么高性能，以后的优化也是一个必须要踩的坑<h3 id="多线程"><a href="#多线程" class="headerlink" title="多线程"></a>多线程</h3>“并发”程序设计，不错的想法<h3 id="动态性"><a href="#动态性" class="headerlink" title="动态性"></a>动态性</h3>Java库中可以自由的添加新方法和实例变量而对客户端没有任何影响</li>
 </ul>
 <hr>
-<h2 id="Java发展简史"><a href="#Java发展简史" class="headerlink" title="Java发展简史"></a>Java发展简史</h2><p>直接来张图吧，永远虔诚，永远心存敬畏。<br><img src=".%5Cpics%5Cjava_pro.png" alt="Java语言的演进"></p>
+<h2 id="Java发展简史"><a href="#Java发展简史" class="headerlink" title="Java发展简史"></a>Java发展简史</h2><p>直接来张图吧，永远虔诚，永远心存敬畏。<br><img src="/.io//.%5Cpics%5Cjava_pro.png" alt="Java语言的演进"></p>
 <hr>
 <h2 id="Java常见的误解（嗯，对我来说确实有点用）"><a href="#Java常见的误解（嗯，对我来说确实有点用）" class="headerlink" title="Java常见的误解（嗯，对我来说确实有点用）"></a>Java常见的误解（嗯，对我来说确实有点用）</h2><ul>
 <li>XML是一种描述数据的方式</li>
