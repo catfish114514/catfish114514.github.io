@@ -32,31 +32,22 @@
   <entry>
     <title>java_overview</title>
     <url>/2021/10/23/java-overview/</url>
-    <content><![CDATA[<h1 id="1-Java-overview"><a href="#1-Java-overview" class="headerlink" title="1.Java overview"></a>1.Java overview</h1><h2 id="简单说两句"><a href="#简单说两句" class="headerlink" title="简单说两句"></a>简单说两句</h2><pre><code>从这篇博客起我开始从头学习Java，目前选了几本基本经典读物，试试生硬的啃啃吧，第一本，也就是此时此地选的是《Java核心技术》，该书分为两卷，大致浏览了下，比较新而且没有超纲，就当认真复习一下。以前学了个啥都过一段时间就忘，现在有了博客，以后笔记会不定时更新，坚持下去。该动了！！！
-</code></pre>
-<h2 id="Java设计程序概述"><a href="#Java设计程序概述" class="headerlink" title="Java设计程序概述"></a>Java设计程序概述</h2><pre><code>我的java版本还是JDK1.8，无论是我的还是学校教学的版本都是1.8，😓，java自2018年起开始每隔6个月发布一次版本更新，本次学习的《Core java》涵盖了Java 11，或许以后自己的电脑得更新一下Java版本了，Time flies fast，自Java 8发布以来已经过了7年了（2021），自己也得尽快跟上时代的脚步。
-Java的设计初衷，看不懂也记下来，慢慢的自己就懂了😀
-</code></pre>
-<h3 id="简单性"><a href="#简单性" class="headerlink" title="简单性"></a>简单性</h3><pre><code>Java设计之初尽可能地贴近C++，同时剔除了后者很多很少使用，难以理解，容易混淆的特性。同时“简单”的另一个方面便是“小”，即支持开发能够在小型机器上独立运行的软件，随着版本的更新，Java类库也变成了一大坨，Java ME（Micro Edition），顾名思义则适用于嵌入式设备。
-</code></pre>
-<h3 id="面向对象"><a href="#面向对象" class="headerlink" title="面向对象"></a>面向对象</h3><pre><code>面向对象，额😓，书中对面向对象的解释则是举了一个木匠的例子：一个“面向对象”的木匠始终首先关注的是所制作的椅子其次是所使用的工具。我对面向对象和面向过程的理解同样也打个比方，即：面向过程是吃炒菜，面向对象是吃涮锅，炒菜一口气下来炒出来开吃，涮锅则是想吃什么涮什么，刚开始接触面向对象时我还乐此不疲的用这个例子给同学解释，现在想想并不是很贴切，希望我那朋友没把我的话听进去哈哈。后再在读《大话设计模式》时，我对该书作者对面向对象的举例印象尤为深刻，以曹操的“对酒当歌，人生几何。”引出活字印刷术的面向对象应用，古人的智慧确实是难以估量的，敬佩。
-</code></pre>
-<h3 id="分布式"><a href="#分布式" class="headerlink" title="分布式"></a>分布式</h3><pre><code>Java有一个丰富的例程库，用于处理HTTP,FTP之类的TCP/IP协议。Java应用可以通过URL打开和访问网络上的对象，其便携程度就好比访问本地文件一样，放在Java被发明出来的那个年代，主要还是从C++和Visual Basic程序连接Web服务器，这里感觉是一个大坑，以后估计有的踩。
-</code></pre>
-<h3 id="健壮性"><a href="#健壮性" class="headerlink" title="健壮性"></a>健壮性</h3><pre><code>Java编译器能够检测出许多其他语言中仅在运行时才能检测出来的问题，同时，Java与C/C++最大的不同在于**Java采用的指针模型可以消除重写内存和损坏数据的可能性**（暂时不懂这个，我只知道......好吧我什么都不知道）
-</code></pre>
-<h3 id="安全性"><a href="#安全性" class="headerlink" title="安全性"></a>安全性</h3><pre><code>Java要适用于网络/分布式环境，故安全性颇受重视，使用Java构建防病毒、防篡改的系统。
-Java可以做到防范
-</code></pre>
+    <content><![CDATA[<h1 id="1-Java-overview"><a href="#1-Java-overview" class="headerlink" title="1.Java overview"></a>1.Java overview</h1><h2 id="简单说两句"><a href="#简单说两句" class="headerlink" title="简单说两句"></a>简单说两句</h2><p>从这篇博客起我开始从头学习Java，目前选了几本基本经典读物，试试生硬的啃啃吧，第一本，也就是此时此地选的是《Java核心技术》，该书分为两卷，大致浏览了下，比较新而且没有超纲，就当认真复习一下。以前学了个啥都过一段时间就忘，现在有了博客，以后笔记会不定时更新，坚持下去。该动了！！！</p>
+<h2 id="Java设计程序概述"><a href="#Java设计程序概述" class="headerlink" title="Java设计程序概述"></a>Java设计程序概述</h2><p>我的java版本还是JDK1.8，无论是我的还是学校教学的版本都是1.8，😓，java自2018年起开始每隔6个月发布一次版本更新，本次学习的《Core java》涵盖了Java 11，或许以后自己的电脑得更新一下Java版本了，Time flies fast，自Java 8发布以来已经过了7年了（2021），自己也得尽快跟上时代的脚步。<br>Java的设计初衷，看不懂也记下来，慢慢的自己就懂了😀</p>
+<h3 id="简单性"><a href="#简单性" class="headerlink" title="简单性"></a>简单性</h3><p>Java设计之初尽可能地贴近C++，同时剔除了后者很多很少使用，难以理解，容易混淆的特性。同时“简单”的另一个方面便是“小”，即支持开发能够在小型机器上独立运行的软件，随着版本的更新，Java类库也变成了一大坨，Java ME（Micro Edition），顾名思义则适用于嵌入式设备。</p>
+<h3 id="面向对象"><a href="#面向对象" class="headerlink" title="面向对象"></a>面向对象</h3><p>面向对象，额😓，书中对面向对象的解释则是举了一个木匠的例子：一个“面向对象”的木匠始终首先关注的是所制作的椅子其次是所使用的工具。我对面向对象和面向过程的理解同样也打个比方，即：面向过程是吃炒菜，面向对象是吃涮锅，炒菜一口气下来炒出来开吃，涮锅则是想吃什么涮什么，刚开始接触面向对象时我还乐此不疲的用这个例子给同学解释，现在想想并不是很贴切，希望我那朋友没把我的话听进去哈哈。后再在读《大话设计模式》时，我对该书作者对面向对象的举例印象尤为深刻，以曹操的“对酒当歌，人生几何。”引出活字印刷术的面向对象应用，古人的智慧确实是难以估量的，敬佩。</p>
+<h3 id="分布式"><a href="#分布式" class="headerlink" title="分布式"></a>分布式</h3><p>Java有一个丰富的例程库，用于处理HTTP,FTP之类的TCP/IP协议。Java应用可以通过URL打开和访问网络上的对象，其便携程度就好比访问本地文件一样，放在Java被发明出来的那个年代，主要还是从C++和Visual Basic程序连接Web服务器，这里感觉是一个大坑，以后估计有的踩。</p>
+<h3 id="健壮性"><a href="#健壮性" class="headerlink" title="健壮性"></a>健壮性</h3><p>Java编译器能够检测出许多其他语言中仅在运行时才能检测出来的问题，同时，Java与C/C++最大的不同在于<strong>Java采用的指针模型可以消除重写内存和损坏数据的可能性</strong>（暂时不懂这个，我只知道……好吧我什么都不知道）</p>
+<h3 id="安全性"><a href="#安全性" class="headerlink" title="安全性"></a>安全性</h3><p>Java要适用于网络/分布式环境，故安全性颇受重视，使用Java构建防病毒、防篡改的系统。<br>Java可以做到防范</p>
 <ul>
 <li>运行时堆栈溢出</li>
 <li>破坏自己进程空间之外的内存</li>
-<li>未经授权读写文件<br>  后来嘛，也就那样（不是我的意思，是Core java作者的意思，哈哈）<h3 id="体系结构中立性"><a href="#体系结构中立性" class="headerlink" title="体系结构中立性"></a>体系结构中立性</h3>  Emm，JVM也是一个大坑。编译器生成一个体系结构中立的目标文件格式，这些编译后的代码可以在许多处理器上运行，我是不是可以理解为，体系结构中立性为可移植性立下了基础？<h3 id="可移植性"><a href="#可移植性" class="headerlink" title="可移植性"></a>可移植性</h3>  不用操心底层操作系统如何运作，做到程序可移植且不受编译器开发商的约束（大概吧<h3 id="解释型"><a href="#解释型" class="headerlink" title="解释型"></a>解释型</h3>  Java解释器可以在任何移植了解释器的机器上直接执行Java字节码，jshell（新奇，我JDK1.8没见过这个东西）<h3 id="高性能"><a href="#高性能" class="headerlink" title="高性能"></a>高性能</h3>  不怎么明白为什么高性能，我对Java的理解是不怎么高性能，以后的优化也是一个必须要踩的坑<h3 id="多线程"><a href="#多线程" class="headerlink" title="多线程"></a>多线程</h3>  “并发”程序设计，不错的想法<h3 id="动态性"><a href="#动态性" class="headerlink" title="动态性"></a>动态性</h3>  Java库中可以自由的添加新方法和实例变量而对客户端没有任何影响</li>
+<li>未经授权读写文件<br>后来嘛，也就那样（不是我的意思，是Core java作者的意思，哈哈）<h3 id="体系结构中立性"><a href="#体系结构中立性" class="headerlink" title="体系结构中立性"></a>体系结构中立性</h3>Emm，JVM也是一个大坑。编译器生成一个体系结构中立的目标文件格式，这些编译后的代码可以在许多处理器上运行，我是不是可以理解为，体系结构中立性为可移植性立下了基础？<h3 id="可移植性"><a href="#可移植性" class="headerlink" title="可移植性"></a>可移植性</h3>不用操心底层操作系统如何运作，做到程序可移植且不受编译器开发商的约束（大概吧<h3 id="解释型"><a href="#解释型" class="headerlink" title="解释型"></a>解释型</h3>Java解释器可以在任何移植了解释器的机器上直接执行Java字节码，jshell（新奇，我JDK1.8没见过这个东西）<h3 id="高性能"><a href="#高性能" class="headerlink" title="高性能"></a>高性能</h3>不怎么明白为什么高性能，我对Java的理解是不怎么高性能，以后的优化也是一个必须要踩的坑<h3 id="多线程"><a href="#多线程" class="headerlink" title="多线程"></a>多线程</h3>“并发”程序设计，不错的想法<h3 id="动态性"><a href="#动态性" class="headerlink" title="动态性"></a>动态性</h3>Java库中可以自由的添加新方法和实例变量而对客户端没有任何影响</li>
 </ul>
 <hr>
-<h2 id="Java发展简史"><a href="#Java发展简史" class="headerlink" title="Java发展简史"></a>Java发展简史</h2><pre><code>直接来张图吧，永远虔诚，永远心存敬畏。
-</code></pre>
-<h2 id=""><a href="#" class="headerlink" title=""></a><img src=".%5Cpics%5Cjava_pro.png" alt="Java语言的演进"></h2><h2 id="Java常见的误解（嗯，对我来说确实有点用）"><a href="#Java常见的误解（嗯，对我来说确实有点用）" class="headerlink" title="Java常见的误解（嗯，对我来说确实有点用）"></a>Java常见的误解（嗯，对我来说确实有点用）</h2><ul>
+<h2 id="Java发展简史"><a href="#Java发展简史" class="headerlink" title="Java发展简史"></a>Java发展简史</h2><p>直接来张图吧，永远虔诚，永远心存敬畏。<br><img src=".%5Cpics%5Cjava_pro.png" alt="Java语言的演进"></p>
+<hr>
+<h2 id="Java常见的误解（嗯，对我来说确实有点用）"><a href="#Java常见的误解（嗯，对我来说确实有点用）" class="headerlink" title="Java常见的误解（嗯，对我来说确实有点用）"></a>Java常见的误解（嗯，对我来说确实有点用）</h2><ul>
 <li>XML是一种描述数据的方式</li>
 <li>早期的Java是解释型的，，现在的Java虚拟机运用了即时编译器，即时！即时！即时！！！</li>
 <li>JavaScript和Java关系不大</li>
