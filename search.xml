@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>my first blog</title>
+    <url>/2021/10/19/my-first-blog/</url>
+    <content><![CDATA[<h1 id="你好啊，猫鱼"><a href="#你好啊，猫鱼" class="headerlink" title="你好啊，猫鱼"></a>你好啊，猫鱼</h1><p>你花了将近3天时间完成了hexo博客的创建和远端部署<br>完成了博客的更新和修改以及Markdown的使用<br>快乐的心情难以言表<br>以及<br>陌生人，Stranger，希望你好好生活，hope you a wonderful life.</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
     <title>Meow meow meow</title>
     <url>/2021/10/20/Meow-meow-meow/</url>
     <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
@@ -23,8 +30,8 @@
       </tags>
   </entry>
   <entry>
-    <title>java_overview</title>
-    <url>/2021/10/23/java-overview/</url>
+    <title>java-overview</title>
+    <url>/2021/10/25/java-overview/</url>
     <content><![CDATA[<h1 id="1-Java-overview"><a href="#1-Java-overview" class="headerlink" title="(1).Java overview"></a>(1).Java overview</h1><h2 id="1-简单说两句"><a href="#1-简单说两句" class="headerlink" title="1 简单说两句"></a>1 简单说两句</h2><p>从这篇博客起我开始从头学习Java，目前选了几本基本经典读物，试试生硬的啃啃吧，第一本，也就是此时此地选的是《Java核心技术》，该书分为两卷，大致浏览了下，比较新而且没有超纲，就当认真复习一下。以前学了个啥都过一段时间就忘，现在有了博客，以后笔记会不定时更新，坚持下去。该动了！！！</p>
 <h2 id="2-Java设计程序概述"><a href="#2-Java设计程序概述" class="headerlink" title="2 Java设计程序概述"></a>2 Java设计程序概述</h2><p>我的java版本还是JDK1.8，无论是我的还是学校教学的版本都是1.8，😓，java自2018年起开始每隔6个月发布一次版本更新，本次学习的《Core java》涵盖了Java 11，或许以后自己的电脑得更新一下Java版本了，Time flies fast，自Java 8发布以来已经过了7年了（2021），自己也得尽快跟上时代的脚步。<br>Java的设计初衷，看不懂也记下来，慢慢的自己就懂了😀</p>
 <h3 id="2-1-简单性"><a href="#2-1-简单性" class="headerlink" title="2.1 简单性"></a>2.1 简单性</h3><p>Java设计之初尽可能地贴近C++，同时剔除了后者很多很少使用，难以理解，容易混淆的特性。同时“简单”的另一个方面便是“小”，即支持开发能够在小型机器上独立运行的软件，随着版本的更新，Java类库也变成了一大坨，Java ME（Micro Edition），顾名思义则适用于嵌入式设备。</p>
@@ -46,17 +53,11 @@
 <li>JavaScript和Java关系不大</li>
 <li>Java学习对Android编程也有帮助</li>
 </ul>
+<hr>
 ]]></content>
       <categories>
         <category>java</category>
         <category>Core java</category>
       </categories>
-  </entry>
-  <entry>
-    <title>my first blog</title>
-    <url>/2021/10/19/my-first-blog/</url>
-    <content><![CDATA[<h1 id="你好啊，猫鱼"><a href="#你好啊，猫鱼" class="headerlink" title="你好啊，猫鱼"></a>你好啊，猫鱼</h1><p>你花了将近3天时间完成了hexo博客的创建和远端部署<br>完成了博客的更新和修改以及Markdown的使用<br>快乐的心情难以言表<br>以及<br>陌生人，Stranger，希望你好好生活，hope you a wonderful life.</p>
-<hr>
-]]></content>
   </entry>
 </search>
