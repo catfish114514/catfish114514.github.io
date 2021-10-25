@@ -38,7 +38,7 @@
 <li>未经授权读写文件<br>后来嘛，也就那样（不是我的意思，是Core java作者的意思，哈哈）<h3 id="2-6-体系结构中立性"><a href="#2-6-体系结构中立性" class="headerlink" title="2.6 体系结构中立性"></a>2.6 体系结构中立性</h3>Emm，JVM也是一个大坑。编译器生成一个体系结构中立的目标文件格式，这些编译后的代码可以在许多处理器上运行，我是不是可以理解为，体系结构中立性为可移植性立下了基础？<h3 id="2-7-可移植性"><a href="#2-7-可移植性" class="headerlink" title="2.7 可移植性"></a>2.7 可移植性</h3>不用操心底层操作系统如何运作，做到程序可移植且不受编译器开发商的约束（大概吧<h3 id="2-8-解释型"><a href="#2-8-解释型" class="headerlink" title="2.8 解释型"></a>2.8 解释型</h3>Java解释器可以在任何移植了解释器的机器上直接执行Java字节码，jshell（新奇，我JDK1.8没见过这个东西）<h3 id="2-9-高性能"><a href="#2-9-高性能" class="headerlink" title="2.9 高性能"></a>2.9 高性能</h3>不怎么明白为什么高性能，我对Java的理解是不怎么高性能，以后的优化也是一个必须要踩的坑<h3 id="2-10-多线程"><a href="#2-10-多线程" class="headerlink" title="2.10 多线程"></a>2.10 多线程</h3>“并发”程序设计，不错的想法<h3 id="2-11-动态性"><a href="#2-11-动态性" class="headerlink" title="2.11 动态性"></a>2.11 动态性</h3>Java库中可以自由的添加新方法和实例变量而对客户端没有任何影响</li>
 </ul>
 <hr>
-<h2 id="3-Java发展简史"><a href="#3-Java发展简史" class="headerlink" title="3 Java发展简史"></a>3 Java发展简史</h2><p>直接来张图吧，永远虔诚，永远心存敬畏。<br><img src="/.io//java_pro.png" alt="Java语言的演进"></p>
+<h2 id="3-Java发展简史"><a href="#3-Java发展简史" class="headerlink" title="3 Java发展简史"></a>3 Java发展简史</h2><p>直接来张图吧，永远虔诚，永远心存敬畏。<br><img src="/.io//a.png" alt="Java语言的演进"></p>
 <hr>
 <h2 id="4-Java常见的误解（嗯，对我来说确实有点用）"><a href="#4-Java常见的误解（嗯，对我来说确实有点用）" class="headerlink" title="4 Java常见的误解（嗯，对我来说确实有点用）"></a>4 Java常见的误解（嗯，对我来说确实有点用）</h2><ul>
 <li>XML是一种描述数据的方式</li>
