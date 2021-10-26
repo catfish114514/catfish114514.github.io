@@ -23,15 +23,56 @@
       </tags>
   </entry>
   <entry>
-    <title>java环境和基本程序设计结构</title>
-    <url>/2021/10/25/java%E7%8E%AF%E5%A2%83%E5%92%8C%E5%9F%BA%E6%9C%AC%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%BB%93%E6%9E%84/</url>
-    <content><![CDATA[<h1 id="2-java环境和基本程序设计结构"><a href="#2-java环境和基本程序设计结构" class="headerlink" title="(2)java环境和基本程序设计结构"></a>(2)java环境和基本程序设计结构</h1><h2 id="1-简单说两句"><a href="#1-简单说两句" class="headerlink" title="1 简单说两句"></a>1 简单说两句</h2><p>本次博客迎来了Core java的第二章和第三章，I met a terrible windows bug again, shit!<br>My Chinese input program is running error again, its text box is missing so I do not know which word should I choose, damn it!<br>Trying rebooting the computer, wish me luck :(<br>我回来了，现在好了。淦<br>本次博客着重于Java环境的安装和基本程序的结构讲解，这一次我打算在我电脑上装一个版本比较新的Java。试一试，该动了！！！😡</p>
+    <title>java overview</title>
+    <url>/2021/10/25/java-overview/</url>
+    <content><![CDATA[<h1 id="1-Java-overview"><a href="#1-Java-overview" class="headerlink" title="(1) Java overview"></a>(1) Java overview</h1><h2 id="1-简单说两句"><a href="#1-简单说两句" class="headerlink" title="1 简单说两句"></a>1 简单说两句</h2><p>从这篇博客起我开始从头学习Java，目前选了几本基本经典读物，试试生硬的啃啃吧，第一本，也就是此时此地选的是《Java核心技术》，该书分为两卷，大致浏览了下，比较新而且没有超纲，就当认真复习一下。以前学了个啥都过一段时间就忘，现在有了博客，以后笔记会不定时更新，坚持下去。该动了！！！</p>
+<h2 id="2-Java设计程序概述"><a href="#2-Java设计程序概述" class="headerlink" title="2 Java设计程序概述"></a>2 Java设计程序概述</h2><p>我的java版本还是JDK1.8，无论是我的还是学校教学的版本都是1.8，😓，java自2018年起开始每隔6个月发布一次版本更新，本次学习的《Core java》涵盖了Java 11，或许以后自己的电脑得更新一下Java版本了，Time flies fast，自Java 8发布以来已经过了7年了（2021），自己也得尽快跟上时代的脚步。<br>Java的设计初衷，看不懂也记下来，慢慢的自己就懂了😀</p>
+<h3 id="2-1-简单性"><a href="#2-1-简单性" class="headerlink" title="2.1 简单性"></a>2.1 简单性</h3><p>Java设计之初尽可能地贴近C++，同时剔除了后者很多很少使用，难以理解，容易混淆的特性。同时“简单”的另一个方面便是“小”，即支持开发能够在小型机器上独立运行的软件，随着版本的更新，Java类库也变成了一大坨，Java ME（Micro Edition），顾名思义则适用于嵌入式设备。</p>
+<h3 id="2-2-面向对象"><a href="#2-2-面向对象" class="headerlink" title="2.2 面向对象"></a>2.2 面向对象</h3><p>面向对象，额😓，书中对面向对象的解释则是举了一个木匠的例子：一个“面向对象”的木匠始终首先关注的是所制作的椅子其次是所使用的工具。我对面向对象和面向过程的理解同样也打个比方，即：面向过程是吃炒菜，面向对象是吃涮锅，炒菜一口气下来炒出来开吃，涮锅则是想吃什么涮什么，刚开始接触面向对象时我还乐此不疲的用这个例子给同学解释，现在想想并不是很贴切，希望我那朋友没把我的话听进去哈哈。后再在读《大话设计模式》时，我对该书作者对面向对象的举例印象尤为深刻，以曹操的“对酒当歌，人生几何。”引出活字印刷术的面向对象应用，古人的智慧确实是难以估量的，敬佩。</p>
+<h3 id="2-3-分布式"><a href="#2-3-分布式" class="headerlink" title="2.3 分布式"></a>2.3 分布式</h3><p>Java有一个丰富的例程库，用于处理HTTP,FTP之类的TCP/IP协议。Java应用可以通过URL打开和访问网络上的对象，其便携程度就好比访问本地文件一样，放在Java被发明出来的那个年代，主要还是从C++和Visual Basic程序连接Web服务器，这里感觉是一个大坑，以后估计有的踩。</p>
+<h3 id="2-4-健壮性"><a href="#2-4-健壮性" class="headerlink" title="2.4 健壮性"></a>2.4 健壮性</h3><p>Java编译器能够检测出许多其他语言中仅在运行时才能检测出来的问题，同时，Java与C/C++最大的不同在于<strong>Java采用的指针模型可以消除重写内存和损坏数据的可能性</strong>（暂时不懂这个，我只知道……好吧我什么都不知道）</p>
+<h3 id="2-5-安全性"><a href="#2-5-安全性" class="headerlink" title="2.5 安全性"></a>2.5 安全性</h3><p>Java要适用于网络/分布式环境，故安全性颇受重视，使用Java构建防病毒、防篡改的系统。<br>Java可以做到防范</p>
+<ul>
+<li>运行时堆栈溢出</li>
+<li>破坏自己进程空间之外的内存</li>
+<li>未经授权读写文件</li>
+</ul>
+<hr>
+<p>后来嘛，也就那样（不是我的意思，是Core java作者的意思，哈哈）</p>
+<h3 id="2-6-体系结构中立性"><a href="#2-6-体系结构中立性" class="headerlink" title="2.6 体系结构中立性"></a>2.6 体系结构中立性</h3><p>Emm，JVM也是一个大坑。编译器生成一个体系结构中立的目标文件格式，这些编译后的代码可以在许多处理器上运行，我是不是可以理解为，体系结构中立性为可移植性立下了基础？</p>
+<h3 id="2-7-可移植性"><a href="#2-7-可移植性" class="headerlink" title="2.7 可移植性"></a>2.7 可移植性</h3><p>不用操心底层操作系统如何运作，做到程序可移植且不受编译器开发商的约束（大概吧</p>
+<h3 id="2-8-解释型"><a href="#2-8-解释型" class="headerlink" title="2.8 解释型"></a>2.8 解释型</h3><p>Java解释器可以在任何移植了解释器的机器上直接执行Java字节码，jshell（新奇，我JDK1.8没见过这个东西）</p>
+<h3 id="2-9-高性能"><a href="#2-9-高性能" class="headerlink" title="2.9 高性能"></a>2.9 高性能</h3><p>不怎么明白为什么高性能，我对Java的理解是不怎么高性能，以后的优化也是一个必须要踩的坑</p>
+<h3 id="2-10-多线程"><a href="#2-10-多线程" class="headerlink" title="2.10 多线程"></a>2.10 多线程</h3><p>“并发”程序设计，不错的想法</p>
+<h3 id="2-11-动态性"><a href="#2-11-动态性" class="headerlink" title="2.11 动态性"></a>2.11 动态性</h3><h2 id="Java库中可以自由的添加新方法和实例变量而对客户端没有任何影响"><a href="#Java库中可以自由的添加新方法和实例变量而对客户端没有任何影响" class="headerlink" title="Java库中可以自由的添加新方法和实例变量而对客户端没有任何影响"></a>Java库中可以自由的添加新方法和实例变量而对客户端没有任何影响</h2><h2 id="3-Java发展简史"><a href="#3-Java发展简史" class="headerlink" title="3 Java发展简史"></a>3 Java发展简史</h2><p>直接来张图吧，永远虔诚，永远心存敬畏。!可恶，图片上传失败了，只好用外链了，总有一天外联也得挂，所以以后的博客尽量不引入图片，哎~<br><img src="https://s3.bmp.ovh/imgs/2021/10/c5c341f5d5428aae.png" alt="Java语言的演进"></p>
+<hr>
+<h2 id="4-Java常见的误解（嗯，对我来说确实有点用）"><a href="#4-Java常见的误解（嗯，对我来说确实有点用）" class="headerlink" title="4 Java常见的误解（嗯，对我来说确实有点用）"></a>4 Java常见的误解（嗯，对我来说确实有点用）</h2><ul>
+<li>XML是一种描述数据的方式</li>
+<li>早期的Java是解释型的，，现在的Java虚拟机运用了即时编译器，即时！即时！即时！！！</li>
+<li>JavaScript和Java关系不大</li>
+<li>Java学习对Android编程也有帮助</li>
+</ul>
+<hr>
+]]></content>
+      <categories>
+        <category>java</category>
+        <category>Core java</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>java环境</title>
+    <url>/2021/10/25/java%E7%8E%AF%E5%A2%83/</url>
+    <content><![CDATA[<h1 id="2-java环境"><a href="#2-java环境" class="headerlink" title="(2)java环境"></a>(2)java环境</h1><h2 id="1-简单说两句"><a href="#1-简单说两句" class="headerlink" title="1 简单说两句"></a>1 简单说两句</h2><p>本次博客迎来了Core java的第二章，I met a terrible windows bug again, shit!<br>My Chinese input program is running error again, its text box is missing so I do not know which word should I choose, damn it!<br>Trying rebooting the computer, wish me luck :(<br>我回来了，现在好了。淦<br>本次博客着重于Java环境的安装，这一次我打算在我电脑上装一个版本比较新的Java。试一试，该动了！！！😡</p>
 <h2 id="2-出问题"><a href="#2-出问题" class="headerlink" title="2 出问题"></a>2 出问题</h2><p>考虑到是否可以在一个环境下装多个JDK问题，我尝试冲浪寻求答案，得到的回答确实不支持，有点伤心<br>那这样吧，不怕事情多，不怕事情大，我把现在电脑里面的JDK1.8删干净，然后装一个更高版本的，估计肯定不会是一帆风顺的</p>
 <h2 id="3-关于JDK的卸载"><a href="#3-关于JDK的卸载" class="headerlink" title="3 关于JDK的卸载"></a>3 关于JDK的卸载</h2><ul>
 <li>首先卸载控制面板里面的 ①java 8 update和②java SE Development Kit 8 Update</li>
 <li>删除之前配置的环境变量</li>
 <li>删除注册表</li>
-<li>重启并准备新的安装<br>综合考虑，准备下JDK 11，这个版本在19年出了最终版，目前JDK最高版本是JDK 17，😓这个更新速度让人有一种用力过猛的感觉，先下载<h2 id="4-JDK-11的安装以及环境配置"><a href="#4-JDK-11的安装以及环境配置" class="headerlink" title="4 JDK 11的安装以及环境配置"></a>4 JDK 11的安装以及环境配置</h2></li>
+<li>重启并准备新的安装</li>
+</ul>
+<hr>
+<p>综合考虑，准备下JDK 11，这个版本在19年出了最终版，目前JDK最高版本是JDK 17，😓这个更新速度让人有一种用力过猛的感觉，先下载</p>
+<h2 id="4-JDK-11的安装以及环境配置"><a href="#4-JDK-11的安装以及环境配置" class="headerlink" title="4 JDK 11的安装以及环境配置"></a>4 JDK 11的安装以及环境配置</h2><ul>
 <li>双击jdk.exe(智障发言)，选择安装目录，安装完成后在目录下shift+右键唤出powershell输入bin\jlink.exe –module-path jmods –add-modules java.desktop –output jre 来创建jre</li>
 <li>配置环境变量-&gt;系统变量JAVA_HOME和CLASSPATH以及Path变量</li>
 <li>cmd验证 java javac java-version 三个命令，验证失败！可笑啊，我明明拥有整个电脑，但我却是这个电脑的用户，头大，等我解决一下回来。</li>
@@ -40,7 +81,7 @@
 <p>CMD写的BAT脚本我们看作是面向过程的，直白点说就是你是从计算机执行的流程来编写脚本的。而PowerShell则是面向对象的,是一种站在使用者的角度进行脚本的编写。<br>可见PowerShell功能还是强大，至此JDK的旧版卸载和新版安装及环境配置圆满成功</p>
 </blockquote>
 <h2 id="6-敲一个书中事例"><a href="#6-敲一个书中事例" class="headerlink" title="6 敲一个书中事例"></a>6 敲一个书中事例</h2>书里面都没让敲，就是给了个附带的现成的java文件让编译了一下，正好试试看看博客里面的代码块效果(Welcome.java)：<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">public class Welcome&#123;</span><br><span class="line">	public static void main(String arg[])&#123;</span><br><span class="line">		String greeting=&quot;Welcome to Core Java!&quot;</span><br><span class="line">		System.out.println(greeting);</span><br><span class="line">		for(int i=0;i&lt;greeting.length;i++)&#123;</span><br><span class="line">			System.out.println(&quot;=&quot;);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-顺带一提关于java类的命名，遵循的是CamelCase骆驼式命名法，嗯就是驼峰那样子<h2 id="7-又一个新奇的发现"><a href="#7-又一个新奇的发现" class="headerlink" title="7 又一个新奇的发现"></a>7 又一个新奇的发现</h2>书中说JDK 11单个源文件不再需要javac命令，尝试一下（成功了！神奇，但是得这么写：java Welcome.java，然后成功输出，好耶！</li>
+顺带一提关于java类的命名，遵循的是CamelCase骆驼式命名法，嗯就是驼峰那样子<h2 id="7-又一个新奇的发现"><a href="#7-又一个新奇的发现" class="headerlink" title="7 又一个新奇的发现"></a>7 又一个新奇的发现</h2>书中说JDK 11单个源文件不再需要javac命令，尝试一下（成功了！神奇，但是得这么写：java Welcome.java，然后成功输出，好耶！<br>好了，刚才把eclipse重装了一遍，装了个最新的，idea倒是不受影响，到现在为止集成开发环境也装好了<br>顺带记下几个eclipse得常用快捷键<br><img src="https://img12.360buyimg.com/ddimg/jfs/t1/218827/20/1930/184791/6177b568E1ca7a5a1/e2066fc8879a4462.png" alt="eclipse常用快捷键"><h2 id="8-JShell"><a href="#8-JShell" class="headerlink" title="8 JShell"></a>8 JShell</h2>Jave 9中引入了一种新的使用java得方法，即JShell，其提供一个“读取-计算-打印循环”，下图演示其基本用法，凑巧刚刚在idea得Tools里面也找到了这个，估计有用处<br><img src="https://img12.360buyimg.com/ddimg/jfs/t1/142894/37/21034/61838/6177b4acE872db48e/2916aa57a7f87ef9.png" alt="JShell得使用"></li>
 </ul>
 <hr>
 ]]></content>
@@ -55,36 +96,5 @@
     <content><![CDATA[<h1 id="你好啊，猫鱼"><a href="#你好啊，猫鱼" class="headerlink" title="你好啊，猫鱼"></a>你好啊，猫鱼</h1><p>你花了将近3天时间完成了hexo博客的创建和远端部署<br>完成了博客的更新和修改以及Markdown的使用<br>快乐的心情难以言表<br>以及<br>陌生人，Stranger，希望你好好生活，hope you a wonderful life.</p>
 <hr>
 ]]></content>
-  </entry>
-  <entry>
-    <title>java overview</title>
-    <url>/2021/10/25/java-overview/</url>
-    <content><![CDATA[<h1 id="1-Java-overview"><a href="#1-Java-overview" class="headerlink" title="(1) Java overview"></a>(1) Java overview</h1><h2 id="1-简单说两句"><a href="#1-简单说两句" class="headerlink" title="1 简单说两句"></a>1 简单说两句</h2><p>从这篇博客起我开始从头学习Java，目前选了几本基本经典读物，试试生硬的啃啃吧，第一本，也就是此时此地选的是《Java核心技术》，该书分为两卷，大致浏览了下，比较新而且没有超纲，就当认真复习一下。以前学了个啥都过一段时间就忘，现在有了博客，以后笔记会不定时更新，坚持下去。该动了！！！</p>
-<h2 id="2-Java设计程序概述"><a href="#2-Java设计程序概述" class="headerlink" title="2 Java设计程序概述"></a>2 Java设计程序概述</h2><p>我的java版本还是JDK1.8，无论是我的还是学校教学的版本都是1.8，😓，java自2018年起开始每隔6个月发布一次版本更新，本次学习的《Core java》涵盖了Java 11，或许以后自己的电脑得更新一下Java版本了，Time flies fast，自Java 8发布以来已经过了7年了（2021），自己也得尽快跟上时代的脚步。<br>Java的设计初衷，看不懂也记下来，慢慢的自己就懂了😀</p>
-<h3 id="2-1-简单性"><a href="#2-1-简单性" class="headerlink" title="2.1 简单性"></a>2.1 简单性</h3><p>Java设计之初尽可能地贴近C++，同时剔除了后者很多很少使用，难以理解，容易混淆的特性。同时“简单”的另一个方面便是“小”，即支持开发能够在小型机器上独立运行的软件，随着版本的更新，Java类库也变成了一大坨，Java ME（Micro Edition），顾名思义则适用于嵌入式设备。</p>
-<h3 id="2-2-面向对象"><a href="#2-2-面向对象" class="headerlink" title="2.2 面向对象"></a>2.2 面向对象</h3><p>面向对象，额😓，书中对面向对象的解释则是举了一个木匠的例子：一个“面向对象”的木匠始终首先关注的是所制作的椅子其次是所使用的工具。我对面向对象和面向过程的理解同样也打个比方，即：面向过程是吃炒菜，面向对象是吃涮锅，炒菜一口气下来炒出来开吃，涮锅则是想吃什么涮什么，刚开始接触面向对象时我还乐此不疲的用这个例子给同学解释，现在想想并不是很贴切，希望我那朋友没把我的话听进去哈哈。后再在读《大话设计模式》时，我对该书作者对面向对象的举例印象尤为深刻，以曹操的“对酒当歌，人生几何。”引出活字印刷术的面向对象应用，古人的智慧确实是难以估量的，敬佩。</p>
-<h3 id="2-3-分布式"><a href="#2-3-分布式" class="headerlink" title="2.3 分布式"></a>2.3 分布式</h3><p>Java有一个丰富的例程库，用于处理HTTP,FTP之类的TCP/IP协议。Java应用可以通过URL打开和访问网络上的对象，其便携程度就好比访问本地文件一样，放在Java被发明出来的那个年代，主要还是从C++和Visual Basic程序连接Web服务器，这里感觉是一个大坑，以后估计有的踩。</p>
-<h3 id="2-4-健壮性"><a href="#2-4-健壮性" class="headerlink" title="2.4 健壮性"></a>2.4 健壮性</h3><p>Java编译器能够检测出许多其他语言中仅在运行时才能检测出来的问题，同时，Java与C/C++最大的不同在于<strong>Java采用的指针模型可以消除重写内存和损坏数据的可能性</strong>（暂时不懂这个，我只知道……好吧我什么都不知道）</p>
-<h3 id="2-5-安全性"><a href="#2-5-安全性" class="headerlink" title="2.5 安全性"></a>2.5 安全性</h3><p>Java要适用于网络/分布式环境，故安全性颇受重视，使用Java构建防病毒、防篡改的系统。<br>Java可以做到防范</p>
-<ul>
-<li>运行时堆栈溢出</li>
-<li>破坏自己进程空间之外的内存</li>
-<li>未经授权读写文件<br>后来嘛，也就那样（不是我的意思，是Core java作者的意思，哈哈）<h3 id="2-6-体系结构中立性"><a href="#2-6-体系结构中立性" class="headerlink" title="2.6 体系结构中立性"></a>2.6 体系结构中立性</h3>Emm，JVM也是一个大坑。编译器生成一个体系结构中立的目标文件格式，这些编译后的代码可以在许多处理器上运行，我是不是可以理解为，体系结构中立性为可移植性立下了基础？<h3 id="2-7-可移植性"><a href="#2-7-可移植性" class="headerlink" title="2.7 可移植性"></a>2.7 可移植性</h3>不用操心底层操作系统如何运作，做到程序可移植且不受编译器开发商的约束（大概吧<h3 id="2-8-解释型"><a href="#2-8-解释型" class="headerlink" title="2.8 解释型"></a>2.8 解释型</h3>Java解释器可以在任何移植了解释器的机器上直接执行Java字节码，jshell（新奇，我JDK1.8没见过这个东西）<h3 id="2-9-高性能"><a href="#2-9-高性能" class="headerlink" title="2.9 高性能"></a>2.9 高性能</h3>不怎么明白为什么高性能，我对Java的理解是不怎么高性能，以后的优化也是一个必须要踩的坑<h3 id="2-10-多线程"><a href="#2-10-多线程" class="headerlink" title="2.10 多线程"></a>2.10 多线程</h3>“并发”程序设计，不错的想法<h3 id="2-11-动态性"><a href="#2-11-动态性" class="headerlink" title="2.11 动态性"></a>2.11 动态性</h3>Java库中可以自由的添加新方法和实例变量而对客户端没有任何影响</li>
-</ul>
-<hr>
-<h2 id="3-Java发展简史"><a href="#3-Java发展简史" class="headerlink" title="3 Java发展简史"></a>3 Java发展简史</h2><p>直接来张图吧，永远虔诚，永远心存敬畏。!可恶，图片上传失败了，只好用外链了，总有一天外联也得挂，所以以后的博客尽量不引入图片，哎~<br><img src="https://s3.bmp.ovh/imgs/2021/10/c5c341f5d5428aae.png" alt="Java语言的演进"></p>
-<hr>
-<h2 id="4-Java常见的误解（嗯，对我来说确实有点用）"><a href="#4-Java常见的误解（嗯，对我来说确实有点用）" class="headerlink" title="4 Java常见的误解（嗯，对我来说确实有点用）"></a>4 Java常见的误解（嗯，对我来说确实有点用）</h2><ul>
-<li>XML是一种描述数据的方式</li>
-<li>早期的Java是解释型的，，现在的Java虚拟机运用了即时编译器，即时！即时！即时！！！</li>
-<li>JavaScript和Java关系不大</li>
-<li>Java学习对Android编程也有帮助</li>
-</ul>
-<hr>
-]]></content>
-      <categories>
-        <category>java</category>
-        <category>Core java</category>
-      </categories>
   </entry>
 </search>
