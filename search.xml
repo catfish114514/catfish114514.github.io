@@ -60,16 +60,11 @@
       </categories>
   </entry>
   <entry>
-    <title>java基本程序设计结构</title>
-    <url>/2021/10/26/java%E5%9F%BA%E6%9C%AC%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%BB%93%E6%9E%84/</url>
-    <content><![CDATA[<h1 id="3-java基本程序设计结构"><a href="#3-java基本程序设计结构" class="headerlink" title="(3) java基本程序设计结构"></a>(3) java基本程序设计结构</h1><h2 id="1-一个简单的java程序"><a href="#1-一个简单的java程序" class="headerlink" title="1 一个简单的java程序"></a>1 一个简单的java程序</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">public class FirstSample&#123;</span><br><span class="line">	public static void main(String[] args)&#123;</span><br><span class="line">		System.out.println(&quot;This time we&#x27;ll not use &#x27;Hello World!&#x27;&quot;);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><strong>public</strong>称为访问修饰符，用于控制程序的其他部分对这段代码的访问级别。<strong>class</strong>表示java所有的内容都包含在类中，关于类的命名则需要遵循大写字母开头且避开java保留字。<br>代码块{ }，代码块分四种，大概知道点，这里提及一下。<br>//这是单行注释<br>/<em>这是多行注释</em>/<br>/*<em>这是文档注释</em>/</p>
-<h2 id="2-数据类型"><a href="#2-数据类型" class="headerlink" title="2 数据类型"></a>2 数据类型</h2><p>Java作为一种强类型语言，需要为每一个变量声明一个类型，共有8种基本类型：int（4字节）,short（2）,long（8）,byte（1）,float（4）,double（8）,char（16）和boolean。<br>char类型原本表示单个字符，但一些Unicode字符也可以用一个char值描述，首先明白什么是Unicode<br>Unicode是一种编码机制，ASCII也是一种编码机制，随着不断扩展，16位的char也装不下Unicode了（满足不了需要），后来引入了码点（了解，简单理解成下标？后面看不懂了……）<br>作者强调强烈不建议在程序中使用char类型，那了解一下就ok</p>
+    <title>my first blog</title>
+    <url>/2021/10/19/my-first-blog/</url>
+    <content><![CDATA[<h1 id="你好啊，猫鱼"><a href="#你好啊，猫鱼" class="headerlink" title="你好啊，猫鱼"></a>你好啊，猫鱼</h1><p>你花了将近3天时间完成了hexo博客的创建和远端部署<br>完成了博客的更新和修改以及Markdown的使用<br>快乐的心情难以言表<br>以及<br>陌生人，Stranger，希望你好好生活，I am because you are.</p>
+<hr>
 ]]></content>
-      <categories>
-        <category>java</category>
-        <category>Core java</category>
-      </categories>
   </entry>
   <entry>
     <title>java环境</title>
@@ -111,10 +106,15 @@
       </categories>
   </entry>
   <entry>
-    <title>my first blog</title>
-    <url>/2021/10/19/my-first-blog/</url>
-    <content><![CDATA[<h1 id="你好啊，猫鱼"><a href="#你好啊，猫鱼" class="headerlink" title="你好啊，猫鱼"></a>你好啊，猫鱼</h1><p>你花了将近3天时间完成了hexo博客的创建和远端部署<br>完成了博客的更新和修改以及Markdown的使用<br>快乐的心情难以言表<br>以及<br>陌生人，Stranger，希望你好好生活，I am because you are.</p>
-<hr>
+    <title>java基本程序设计结构</title>
+    <url>/2021/10/26/java%E5%9F%BA%E6%9C%AC%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%BB%93%E6%9E%84/</url>
+    <content><![CDATA[<h1 id="3-java基本程序设计结构"><a href="#3-java基本程序设计结构" class="headerlink" title="(3) java基本程序设计结构"></a>(3) java基本程序设计结构</h1><h2 id="1-一个简单的java程序"><a href="#1-一个简单的java程序" class="headerlink" title="1 一个简单的java程序"></a>1 一个简单的java程序</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">public class FirstSample&#123;</span><br><span class="line">	public static void main(String[] args)&#123;</span><br><span class="line">		System.out.println(&quot;This time we&#x27;ll not use &#x27;Hello World!&#x27;&quot;);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>public</strong>称为访问修饰符，用于控制程序的其他部分对这段代码的访问级别。<strong>class</strong>表示java所有的内容都包含在类中，关于类的命名则需要遵循大写字母开头且避开java保留字。<br>代码块{ }，代码块分四种，大概知道点，这里提及一下。<br>//这是单行注释<br>/<em>这是多行注释</em>/<br>/*<em>这是文档注释</em>/</p>
+<h2 id="2-数据类型"><a href="#2-数据类型" class="headerlink" title="2 数据类型"></a>2 数据类型</h2><p>Java作为一种强类型语言，需要为每一个变量声明一个类型，共有8种基本类型：int（4字节）,short（2）,long（8）,byte（1）,float（4）,double（8）,char（16）和boolean。<br>char类型原本表示单个字符，但一些Unicode字符也可以用一个char值描述，首先明白什么是Unicode<br>Unicode是一种编码机制，ASCII也是一种编码机制，随着不断扩展，16位的char也装不下Unicode了（满足不了需要），后来引入了码点（了解，简单理解成下标？后面看不懂了……）<br>作者强调强烈不建议在程序中使用char类型，那了解一下就ok</p>
 ]]></content>
+      <categories>
+        <category>java</category>
+        <category>Core java</category>
+      </categories>
   </entry>
 </search>
