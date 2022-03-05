@@ -23,6 +23,43 @@
       </tags>
   </entry>
   <entry>
+    <title>java overview</title>
+    <url>/2021/10/25/java-overview/</url>
+    <content><![CDATA[<h1 id="1-Java-overview"><a href="#1-Java-overview" class="headerlink" title="(1) Java overview"></a>(1) Java overview</h1><h2 id="1-简单说两句"><a href="#1-简单说两句" class="headerlink" title="1 简单说两句"></a>1 简单说两句</h2><p>从这篇博客起我开始从头学习Java，目前选了几本基本经典读物，试试生硬的啃啃吧，第一本，也就是此时此地选的是《Java核心技术》，该书分为两卷，大致浏览了下，比较新而且没有超纲，就当认真复习一下。以前学了个啥都过一段时间就忘，现在有了博客，以后笔记会不定时更新，坚持下去。该动了！！！</p>
+<h2 id="2-Java设计程序概述"><a href="#2-Java设计程序概述" class="headerlink" title="2 Java设计程序概述"></a>2 Java设计程序概述</h2><p>我的java版本还是JDK1.8，无论是我的还是学校教学的版本都是1.8，😓，java自2018年起开始每隔6个月发布一次版本更新，本次学习的《Core java》涵盖了Java 11，或许以后自己的电脑得更新一下Java版本了，Time flies fast，自Java 8发布以来已经过了7年了（2021），自己也得尽快跟上时代的脚步。<br>Java的设计初衷，看不懂也记下来，慢慢的自己就懂了😀</p>
+<h3 id="2-1-简单性"><a href="#2-1-简单性" class="headerlink" title="2.1 简单性"></a>2.1 简单性</h3><p>Java设计之初尽可能地贴近C++，同时剔除了后者很多很少使用，难以理解，容易混淆的特性。同时“简单”的另一个方面便是“小”，即支持开发能够在小型机器上独立运行的软件，随着版本的更新，Java类库也变成了一大坨，Java ME（Micro Edition），顾名思义则适用于嵌入式设备。</p>
+<h3 id="2-2-面向对象"><a href="#2-2-面向对象" class="headerlink" title="2.2 面向对象"></a>2.2 面向对象</h3><p>面向对象，额😓，书中对面向对象的解释则是举了一个木匠的例子：一个“面向对象”的木匠始终首先关注的是所制作的椅子其次是所使用的工具。我对面向对象和面向过程的理解同样也打个比方，即：面向过程是吃炒菜，面向对象是吃涮锅，炒菜一口气下来炒出来开吃，涮锅则是想吃什么涮什么，刚开始接触面向对象时我还乐此不疲的用这个例子给同学解释，现在想想并不是很贴切，希望我那朋友没把我的话听进去哈哈。后再在读《大话设计模式》时，我对该书作者对面向对象的举例印象尤为深刻，以曹操的“对酒当歌，人生几何。”引出活字印刷术的面向对象应用，古人的智慧确实是难以估量的，敬佩。</p>
+<h3 id="2-3-分布式"><a href="#2-3-分布式" class="headerlink" title="2.3 分布式"></a>2.3 分布式</h3><p>Java有一个丰富的例程库，用于处理HTTP,FTP之类的TCP/IP协议。Java应用可以通过URL打开和访问网络上的对象，其便携程度就好比访问本地文件一样，放在Java被发明出来的那个年代，主要还是从C++和Visual Basic程序连接Web服务器，这里感觉是一个大坑，以后估计有的踩。</p>
+<h3 id="2-4-健壮性"><a href="#2-4-健壮性" class="headerlink" title="2.4 健壮性"></a>2.4 健壮性</h3><p>Java编译器能够检测出许多其他语言中仅在运行时才能检测出来的问题，同时，Java与C/C++最大的不同在于<strong>Java采用的指针模型可以消除重写内存和损坏数据的可能性</strong>（暂时不懂这个，我只知道……好吧我什么都不知道）</p>
+<h3 id="2-5-安全性"><a href="#2-5-安全性" class="headerlink" title="2.5 安全性"></a>2.5 安全性</h3><p>Java要适用于网络/分布式环境，故安全性颇受重视，使用Java构建防病毒、防篡改的系统。<br>Java可以做到防范</p>
+<ul>
+<li>运行时堆栈溢出</li>
+<li>破坏自己进程空间之外的内存</li>
+<li>未经授权读写文件</li>
+</ul>
+<hr>
+<p>后来嘛，也就那样（不是我的意思，是Core java作者的意思，哈哈）</p>
+<h3 id="2-6-体系结构中立性"><a href="#2-6-体系结构中立性" class="headerlink" title="2.6 体系结构中立性"></a>2.6 体系结构中立性</h3><p>Emm，JVM也是一个大坑。编译器生成一个体系结构中立的目标文件格式，这些编译后的代码可以在许多处理器上运行，我是不是可以理解为，体系结构中立性为可移植性立下了基础？</p>
+<h3 id="2-7-可移植性"><a href="#2-7-可移植性" class="headerlink" title="2.7 可移植性"></a>2.7 可移植性</h3><p>不用操心底层操作系统如何运作，做到程序可移植且不受编译器开发商的约束（大概吧</p>
+<h3 id="2-8-解释型"><a href="#2-8-解释型" class="headerlink" title="2.8 解释型"></a>2.8 解释型</h3><p>Java解释器可以在任何移植了解释器的机器上直接执行Java字节码，jshell（新奇，我JDK1.8没见过这个东西）</p>
+<h3 id="2-9-高性能"><a href="#2-9-高性能" class="headerlink" title="2.9 高性能"></a>2.9 高性能</h3><p>不怎么明白为什么高性能，我对Java的理解是不怎么高性能，以后的优化也是一个必须要踩的坑</p>
+<h3 id="2-10-多线程"><a href="#2-10-多线程" class="headerlink" title="2.10 多线程"></a>2.10 多线程</h3><p>“并发”程序设计，不错的想法</p>
+<h3 id="2-11-动态性"><a href="#2-11-动态性" class="headerlink" title="2.11 动态性"></a>2.11 动态性</h3><h2 id="Java库中可以自由的添加新方法和实例变量而对客户端没有任何影响"><a href="#Java库中可以自由的添加新方法和实例变量而对客户端没有任何影响" class="headerlink" title="Java库中可以自由的添加新方法和实例变量而对客户端没有任何影响"></a>Java库中可以自由的添加新方法和实例变量而对客户端没有任何影响</h2><h2 id="3-Java发展简史"><a href="#3-Java发展简史" class="headerlink" title="3 Java发展简史"></a>3 Java发展简史</h2><p>直接来张图吧，永远虔诚，永远心存敬畏。!可恶，图片上传失败了，只好用外链了，总有一天外联也得挂，所以以后的博客尽量不引入图片，哎~<br><img src="https://s3.bmp.ovh/imgs/2021/10/c5c341f5d5428aae.png" alt="Java语言的演进"></p>
+<hr>
+<h2 id="4-Java常见的误解（嗯，对我来说确实有点用）"><a href="#4-Java常见的误解（嗯，对我来说确实有点用）" class="headerlink" title="4 Java常见的误解（嗯，对我来说确实有点用）"></a>4 Java常见的误解（嗯，对我来说确实有点用）</h2><ul>
+<li>XML是一种描述数据的方式</li>
+<li>早期的Java是解释型的，，现在的Java虚拟机运用了即时编译器，即时！即时！即时！！！</li>
+<li>JavaScript和Java关系不大</li>
+<li>Java学习对Android编程也有帮助</li>
+</ul>
+<hr>
+]]></content>
+      <categories>
+        <category>java</category>
+        <category>Core java</category>
+      </categories>
+  </entry>
+  <entry>
     <title>java基本程序设计结构</title>
     <url>/2021/10/26/java%E5%9F%BA%E6%9C%AC%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%BB%93%E6%9E%84/</url>
     <content><![CDATA[<h1 id="3-java基本程序设计结构"><a href="#3-java基本程序设计结构" class="headerlink" title="(3) java基本程序设计结构"></a>(3) java基本程序设计结构</h1><h2 id="1-一个简单的java程序"><a href="#1-一个简单的java程序" class="headerlink" title="1 一个简单的java程序"></a>1 一个简单的java程序</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">public class FirstSample&#123;</span><br><span class="line">	public static void main(String[] args)&#123;</span><br><span class="line">		System.out.println(&quot;This time we&#x27;ll not use &#x27;Hello World!&#x27;&quot;);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -74,47 +111,24 @@
       </categories>
   </entry>
   <entry>
-    <title>java overview</title>
-    <url>/2021/10/25/java-overview/</url>
-    <content><![CDATA[<h1 id="1-Java-overview"><a href="#1-Java-overview" class="headerlink" title="(1) Java overview"></a>(1) Java overview</h1><h2 id="1-简单说两句"><a href="#1-简单说两句" class="headerlink" title="1 简单说两句"></a>1 简单说两句</h2><p>从这篇博客起我开始从头学习Java，目前选了几本基本经典读物，试试生硬的啃啃吧，第一本，也就是此时此地选的是《Java核心技术》，该书分为两卷，大致浏览了下，比较新而且没有超纲，就当认真复习一下。以前学了个啥都过一段时间就忘，现在有了博客，以后笔记会不定时更新，坚持下去。该动了！！！</p>
-<h2 id="2-Java设计程序概述"><a href="#2-Java设计程序概述" class="headerlink" title="2 Java设计程序概述"></a>2 Java设计程序概述</h2><p>我的java版本还是JDK1.8，无论是我的还是学校教学的版本都是1.8，😓，java自2018年起开始每隔6个月发布一次版本更新，本次学习的《Core java》涵盖了Java 11，或许以后自己的电脑得更新一下Java版本了，Time flies fast，自Java 8发布以来已经过了7年了（2021），自己也得尽快跟上时代的脚步。<br>Java的设计初衷，看不懂也记下来，慢慢的自己就懂了😀</p>
-<h3 id="2-1-简单性"><a href="#2-1-简单性" class="headerlink" title="2.1 简单性"></a>2.1 简单性</h3><p>Java设计之初尽可能地贴近C++，同时剔除了后者很多很少使用，难以理解，容易混淆的特性。同时“简单”的另一个方面便是“小”，即支持开发能够在小型机器上独立运行的软件，随着版本的更新，Java类库也变成了一大坨，Java ME（Micro Edition），顾名思义则适用于嵌入式设备。</p>
-<h3 id="2-2-面向对象"><a href="#2-2-面向对象" class="headerlink" title="2.2 面向对象"></a>2.2 面向对象</h3><p>面向对象，额😓，书中对面向对象的解释则是举了一个木匠的例子：一个“面向对象”的木匠始终首先关注的是所制作的椅子其次是所使用的工具。我对面向对象和面向过程的理解同样也打个比方，即：面向过程是吃炒菜，面向对象是吃涮锅，炒菜一口气下来炒出来开吃，涮锅则是想吃什么涮什么，刚开始接触面向对象时我还乐此不疲的用这个例子给同学解释，现在想想并不是很贴切，希望我那朋友没把我的话听进去哈哈。后再在读《大话设计模式》时，我对该书作者对面向对象的举例印象尤为深刻，以曹操的“对酒当歌，人生几何。”引出活字印刷术的面向对象应用，古人的智慧确实是难以估量的，敬佩。</p>
-<h3 id="2-3-分布式"><a href="#2-3-分布式" class="headerlink" title="2.3 分布式"></a>2.3 分布式</h3><p>Java有一个丰富的例程库，用于处理HTTP,FTP之类的TCP/IP协议。Java应用可以通过URL打开和访问网络上的对象，其便携程度就好比访问本地文件一样，放在Java被发明出来的那个年代，主要还是从C++和Visual Basic程序连接Web服务器，这里感觉是一个大坑，以后估计有的踩。</p>
-<h3 id="2-4-健壮性"><a href="#2-4-健壮性" class="headerlink" title="2.4 健壮性"></a>2.4 健壮性</h3><p>Java编译器能够检测出许多其他语言中仅在运行时才能检测出来的问题，同时，Java与C/C++最大的不同在于<strong>Java采用的指针模型可以消除重写内存和损坏数据的可能性</strong>（暂时不懂这个，我只知道……好吧我什么都不知道）</p>
-<h3 id="2-5-安全性"><a href="#2-5-安全性" class="headerlink" title="2.5 安全性"></a>2.5 安全性</h3><p>Java要适用于网络/分布式环境，故安全性颇受重视，使用Java构建防病毒、防篡改的系统。<br>Java可以做到防范</p>
-<ul>
-<li>运行时堆栈溢出</li>
-<li>破坏自己进程空间之外的内存</li>
-<li>未经授权读写文件</li>
-</ul>
-<hr>
-<p>后来嘛，也就那样（不是我的意思，是Core java作者的意思，哈哈）</p>
-<h3 id="2-6-体系结构中立性"><a href="#2-6-体系结构中立性" class="headerlink" title="2.6 体系结构中立性"></a>2.6 体系结构中立性</h3><p>Emm，JVM也是一个大坑。编译器生成一个体系结构中立的目标文件格式，这些编译后的代码可以在许多处理器上运行，我是不是可以理解为，体系结构中立性为可移植性立下了基础？</p>
-<h3 id="2-7-可移植性"><a href="#2-7-可移植性" class="headerlink" title="2.7 可移植性"></a>2.7 可移植性</h3><p>不用操心底层操作系统如何运作，做到程序可移植且不受编译器开发商的约束（大概吧</p>
-<h3 id="2-8-解释型"><a href="#2-8-解释型" class="headerlink" title="2.8 解释型"></a>2.8 解释型</h3><p>Java解释器可以在任何移植了解释器的机器上直接执行Java字节码，jshell（新奇，我JDK1.8没见过这个东西）</p>
-<h3 id="2-9-高性能"><a href="#2-9-高性能" class="headerlink" title="2.9 高性能"></a>2.9 高性能</h3><p>不怎么明白为什么高性能，我对Java的理解是不怎么高性能，以后的优化也是一个必须要踩的坑</p>
-<h3 id="2-10-多线程"><a href="#2-10-多线程" class="headerlink" title="2.10 多线程"></a>2.10 多线程</h3><p>“并发”程序设计，不错的想法</p>
-<h3 id="2-11-动态性"><a href="#2-11-动态性" class="headerlink" title="2.11 动态性"></a>2.11 动态性</h3><h2 id="Java库中可以自由的添加新方法和实例变量而对客户端没有任何影响"><a href="#Java库中可以自由的添加新方法和实例变量而对客户端没有任何影响" class="headerlink" title="Java库中可以自由的添加新方法和实例变量而对客户端没有任何影响"></a>Java库中可以自由的添加新方法和实例变量而对客户端没有任何影响</h2><h2 id="3-Java发展简史"><a href="#3-Java发展简史" class="headerlink" title="3 Java发展简史"></a>3 Java发展简史</h2><p>直接来张图吧，永远虔诚，永远心存敬畏。!可恶，图片上传失败了，只好用外链了，总有一天外联也得挂，所以以后的博客尽量不引入图片，哎~<br><img src="https://s3.bmp.ovh/imgs/2021/10/c5c341f5d5428aae.png" alt="Java语言的演进"></p>
-<hr>
-<h2 id="4-Java常见的误解（嗯，对我来说确实有点用）"><a href="#4-Java常见的误解（嗯，对我来说确实有点用）" class="headerlink" title="4 Java常见的误解（嗯，对我来说确实有点用）"></a>4 Java常见的误解（嗯，对我来说确实有点用）</h2><ul>
-<li>XML是一种描述数据的方式</li>
-<li>早期的Java是解释型的，，现在的Java虚拟机运用了即时编译器，即时！即时！即时！！！</li>
-<li>JavaScript和Java关系不大</li>
-<li>Java学习对Android编程也有帮助</li>
-</ul>
-<hr>
-]]></content>
-      <categories>
-        <category>java</category>
-        <category>Core java</category>
-      </categories>
-  </entry>
-  <entry>
     <title>my first blog</title>
     <url>/2021/10/19/my-first-blog/</url>
     <content><![CDATA[<h1 id="你好啊，猫鱼"><a href="#你好啊，猫鱼" class="headerlink" title="你好啊，猫鱼"></a>你好啊，猫鱼</h1><p>你花了将近3天时间完成了hexo博客的创建和远端部署<br>完成了博客的更新和修改以及Markdown的使用<br>快乐的心情难以言表<br>以及<br>陌生人，Stranger，希望你好好生活，I am because you are.</p>
 <hr>
 ]]></content>
+  </entry>
+  <entry>
+    <title>unity1</title>
+    <url>/2022/02/15/unity1/</url>
+    <content><![CDATA[<h1 id="起头"><a href="#起头" class="headerlink" title="起头"></a>起头</h1><h2 id="开始学习Unity3D的使用"><a href="#开始学习Unity3D的使用" class="headerlink" title="开始学习Unity3D的使用"></a>开始学习Unity3D的使用</h2><p>搭了一个车库，认识了各个面板的功能以及一些基本常识，场景，游戏对象，组件等等之类的，游戏对象就是一个容器，用来装组件的<br>建模了一个子弹bullet，了解了父子模型的概念，通常情况下为了保持组件的可续用性，在组件嵌入模型时需要为每一个模型创建一个空的父类，这样在模型更改的时候可以有效继承组件<br>了解了material组件，大体可以理解建模物体的贴图（纹理），颜色，等等一系列渲染的东西，还有渲染模式分为不透明，褪色，透明，抠图<br>关于材质的所有，实际上都是shader的实例</p>
+<h3 id="摄像机"><a href="#摄像机" class="headerlink" title="摄像机"></a>摄像机</h3><p>天空盒 围绕整个场景的包装器，用于模拟天空的材质<br>还有很多操作能用摄像机实现比如说枪械倍镜和小地图之类的，还有同屏双视角，小地图，简单第三人称视角，渲染优化等等<br>了解了渲染管线中cpu和gpu的运作机制和优化渲染的即时遮挡剔除技术，此技术应用于渲染管线之前，但不是所有情况下都优先用遮挡剔除技术，原因在于识别物体是否被遮挡会占用cpu性能，所以遮挡剔除可用于需渲染物体密集且存在遮挡情况下可使用，使用方法为引入插件<br>多层次细节处理 降低非重要物体的面数和细节度，获得高效率的渲染计算，近了用精模，远了用简模，但是存在占内存的问题</p>
+<h3 id="全局光照-GI"><a href="#全局光照-GI" class="headerlink" title="全局光照 GI"></a>全局光照 GI</h3><p>能够计算直接光，间接光，环境光以及反射光的效果<br>直接光可以实现各种光照效果例如渲染警报的红色，角色手电筒的可视范围，室内灯光模拟<br>阴影模拟，阴影剔除等等，单从光源开始设置光源下所有的阴影可以从光源设置，单从物体着手也可以修改物体属性中的阴影<br>从性能入手，类似于遮挡剔除，远处的物体不必渲染其阴影，所以可以设置为不渲染<br>环境光，作用于场景中所有的光照<br>间接光，物体表面接受光照反射出来的光，实现起来最消耗性能<br>反射光，根据【天空盒】计算的作用于所有物体的反射效果<br>实时GI，指运行期间任意修改光源，所有的变化可以实时更新<br>烘焙GI，当场景包含大量物体，实时光照和阴影会对游戏性能产生大影响，此技术将光线效果预渲染成贴图再作用到物体上模拟光影，适合在性能低的设备上运行，并且该技术只能应用于静态<br>光源侦测组件，有小球，收集光照属性并进行计算，由此来弥补bake环境下无实时GI的情况</p>
+<h3 id="声音"><a href="#声音" class="headerlink" title="声音"></a>声音</h3><p>2D声音，适合做背景音乐，能设置左右声道<br>3D声音，有空间感，近大远小，能设置声音衰减</p>
+<h2 id="开始学习C-的学习"><a href="#开始学习C-的学习" class="headerlink" title="开始学习C#的学习"></a>开始学习C#的学习</h2><h3 id="来点快捷键"><a href="#来点快捷键" class="headerlink" title="来点快捷键"></a>来点快捷键</h3><p>ctrl+k+f 智能缩进<br>ctrl+k+c 注释<br>ctrl+k+u 取消注释</p>
+]]></content>
+      <categories>
+        <category>G-project</category>
+        <category>Unity</category>
+      </categories>
   </entry>
 </search>
